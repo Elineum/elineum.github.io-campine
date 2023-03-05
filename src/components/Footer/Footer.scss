@@ -1,0 +1,33 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.page-footer {
+    padding: 5px 0;
+    margin-bottom: 43px;
+
+    font-size: 12px;
+    font-family: "Noto Sans", sans-serif;
+
+    @include media(">tablet") {
+        font-size: 16px;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__link-wrap {
+        max-width: 100px;
+
+        @include media(">tablet") {
+            max-width: unset;
+        }
+    }
+
+    &__link {
+        color: $white;
+    }
+}

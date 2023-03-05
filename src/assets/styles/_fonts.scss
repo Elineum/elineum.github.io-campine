@@ -1,0 +1,239 @@
+@font-face {
+    font-family: "Amatic SC";
+    src: url("/fonts/Amatic_SC/AmaticSC-Regular.eot");
+    src: url("/fonts/Amatic_SC/AmaticSC-Regular.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/Amatic_SC/AmaticSC-Regular.woff2") format("woff2"),
+        url("/fonts/Amatic_SC/AmaticSC-Regular.woff") format("woff"),
+        url("/fonts/Amatic_SC/AmaticSC-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Amatic SC";
+    src: url("/fonts/Amatic_SC/AmaticSC-Bold.eot");
+    src: url("/fonts/Amatic_SC/AmaticSC-Bold.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/Amatic_SC/AmaticSC-Bold.woff2") format("woff2"),
+        url("/fonts/Amatic_SC/AmaticSC-Bold.woff") format("woff"),
+        url("/fonts/Amatic_SC/AmaticSC-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("/fonts/Lato/Lato-BoldItalic.eot");
+    src: url("/fonts/Lato/Lato-BoldItalic.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/Lato/Lato-BoldItalic.woff2") format("woff2"),
+        url("/fonts/Lato/Lato-BoldItalic.woff") format("woff"),
+        url("/fonts/Lato/Lato-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("/fonts/Lato/Lato-Black.eot");
+    src: url("/fonts/Lato/Lato-Black.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Lato/Lato-Black.woff2") format("woff2"),
+        url("/fonts/Lato/Lato-Black.woff") format("woff"),
+        url("/fonts/Lato/Lato-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("/fonts/Lato/Lato-Italic.eot");
+    src: url("/fonts/Lato/Lato-Italic.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Lato/Lato-Italic.woff2") format("woff2"),
+        url("/fonts/Lato/Lato-Italic.woff") format("woff"),
+        url("/fonts/Lato/Lato-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("/fonts/Lato/Lato-Bold.eot");
+    src: url("/fonts/Lato/Lato-Bold.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Lato/Lato-Bold.woff2") format("woff2"),
+        url("/fonts/Lato/Lato-Bold.woff") format("woff"),
+        url("/fonts/Lato/Lato-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato Hairline";
+    src: url("/fonts/Lato/Lato-HairlineItalic.eot");
+    src: url("/fonts/Lato/Lato-HairlineItalic.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/Lato/Lato-HairlineItalic.woff2") format("woff2"),
+        url("/fonts/Lato/Lato-HairlineItalic.woff") format("woff"),
+        url("/fonts/Lato/Lato-HairlineItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato Hairline";
+    src: url("/fonts/Lato/Lato-Hairline.eot");
+    src: url("/fonts/Lato/Lato-Hairline.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Lato/Lato-Hairline.woff2") format("woff2"),
+        url("/fonts/Lato/Lato-Hairline.woff") format("woff"),
+        url("/fonts/Lato/Lato-Hairline.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("/fonts/Lato/Lato-LightItalic.eot");
+    src: url("/fonts/Lato/Lato-LightItalic.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/Lato/Lato-LightItalic.woff2") format("woff2"),
+        url("/fonts/Lato/Lato-LightItalic.woff") format("woff"),
+        url("/fonts/Lato/Lato-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("/fonts/Lato/Lato-Light.eot");
+    src: url("/fonts/Lato/Lato-Light.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Lato/Lato-Light.woff2") format("woff2"),
+        url("/fonts/Lato/Lato-Light.woff") format("woff"),
+        url("/fonts/Lato/Lato-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("/fonts/Lato/Lato-Regular.eot");
+    src: url("/fonts/Lato/Lato-Regular.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Lato/Lato-Regular.woff2") format("woff2"),
+        url("/fonts/Lato/Lato-Regular.woff") format("woff"),
+        url("/fonts/Lato/Lato-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("/fonts/Lato/Lato-BlackItalic.eot");
+    src: url("/fonts/Lato/Lato-BlackItalic.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/Lato/Lato-BlackItalic.woff2") format("woff2"),
+        url("/fonts/Lato/Lato-BlackItalic.woff") format("woff"),
+        url("/fonts/Lato/Lato-BlackItalic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("/fonts/Oswald/Oswald-ExtraLight.eot");
+    src: url("/fonts/Oswald/Oswald-ExtraLight.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/Oswald/Oswald-ExtraLight.woff2") format("woff2"),
+        url("/fonts/Oswald/Oswald-ExtraLight.woff") format("woff"),
+        url("/fonts/Oswald/Oswald-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("/fonts/Oswald/Oswald-Light.eot");
+    src: url("/fonts/Oswald/Oswald-Light.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/Oswald/Oswald-Light.woff2") format("woff2"),
+        url("/fonts/Oswald/Oswald-Light.woff") format("woff"),
+        url("/fonts/Oswald/Oswald-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("/fonts/Oswald/Oswald-Bold.eot");
+    src: url("/fonts/Oswald/Oswald-Bold.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Oswald/Oswald-Bold.woff2") format("woff2"),
+        url("/fonts/Oswald/Oswald-Bold.woff") format("woff"),
+        url("/fonts/Oswald/Oswald-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("/fonts/Oswald/Oswald-SemiBold.eot");
+    src: url("/fonts/Oswald/Oswald-SemiBold.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/Oswald/Oswald-SemiBold.woff2") format("woff2"),
+        url("/fonts/Oswald/Oswald-SemiBold.woff") format("woff"),
+        url("/fonts/Oswald/Oswald-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("/fonts/Oswald/Oswald-Medium.eot");
+    src: url("/fonts/Oswald/Oswald-Medium.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/Oswald/Oswald-Medium.woff2") format("woff2"),
+        url("/fonts/Oswald/Oswald-Medium.woff") format("woff"),
+        url("/fonts/Oswald/Oswald-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("/fonts/Oswald/Oswald-Regular.eot");
+    src: url("/fonts/Oswald/Oswald-Regular.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/Oswald/Oswald-Regular.woff2") format("woff2"),
+        url("/fonts/Oswald/Oswald-Regular.woff") format("woff"),
+        url("/fonts/Oswald/Oswald-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    src: url("/fonts/Noto_Sans/NotoSans-Regular.eot");
+    src: url("/fonts/Noto_Sans/NotoSans-Regular.eot?#iefix")
+            format("embedded-opentype"),
+        url("/fonts/Noto_Sans/NotoSans-Regular.woff2") format("woff2"),
+        url("/fonts/Noto_Sans/NotoSans-Regular.woff") format("woff"),
+        url("/fonts/Noto_Sans/NotoSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

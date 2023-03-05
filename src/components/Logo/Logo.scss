@@ -1,0 +1,39 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.logo {
+    &__link {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+
+        text-decoration: none;
+        text-transform: capitalize;
+
+        font-family: "Amatic SC", sans-serif;
+        font-size: 27px;
+        font-weight: bold;
+
+        color: $white;
+    }
+
+    &__img-wrap {
+        display: flex;
+
+        &_foot {
+            display: none;
+
+            @include media(">tablet") {
+                display: flex;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 25px;
+
+        @include media(">tablet") {
+            font-size: 27px;
+        }
+    }
+}
