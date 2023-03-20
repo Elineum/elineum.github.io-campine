@@ -5,23 +5,16 @@
     font-family: "Lato", sans-serif;
     font-weight: bold;
     font-size: 16px;
-
     color: $darkText;
-
     cursor: pointer;
-
     min-width: 150px;
-
     padding: 10px 0;
-
     border: 0;
     border-radius: 10px;
-
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
-
+    touch-action: none;
     transition: all ease-in-out 0.3s;
-
-    pointer-events: none;
+    z-index: 2;
 
     @include media(">tablet") {
         font-size: 18px;
@@ -29,11 +22,30 @@
         min-width: 200px;
 
         padding: 9px 0 8px;
+    }
 
-        pointer-events: auto;
+    &_form {
+        min-width: 295px;
+
+        @include media(">=tablet") {
+            min-width: 285px;
+        }
+    }
+
+    &_transparent {
+        background-color: transparent;
+        box-shadow: none;
+        color: $white;
+        min-width: 125px;
+        padding: 9px 0;
+        border: 1px solid $white;
+
+        @include media(">tablet") {
+            display: none;
+        }
     }
 
     &:hover {
-        box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+        filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.7));
     }
 }

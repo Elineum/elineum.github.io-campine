@@ -1,0 +1,19 @@
+.contact-info {
+    padding-top: 35px;
+    padding-bottom: 30px;
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        margin-bottom: 10px;
+        text-align: right;
+    }
+
+    &__link {
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+    }
+}

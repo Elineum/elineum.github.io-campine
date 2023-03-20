@@ -21,9 +21,14 @@
 
     &__link-wrap {
         max-width: 100px;
+        transition: all ease-in-out 0.3s;
 
         @include media(">tablet") {
             max-width: unset;
+        }
+
+        &:hover {
+            text-shadow: 0 0 7px white;
         }
     }
 

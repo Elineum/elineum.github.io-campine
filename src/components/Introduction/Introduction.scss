@@ -1,0 +1,137 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.intro {
+    position: relative;
+    min-height: 720px;
+    background-image: url("../../assets/images/intro-backgroundB.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: calc(50% - -140px) center;
+
+    @include media(">=tablet") {
+        min-height: 800px;
+        background-image: url("../../assets/images/intro-background.png");
+        background-position: calc(50% - 40px) center;
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+
+        @include media(">=tablet") {
+            justify-content: space-between;
+        }
+    }
+
+    &__blur-wrap {
+        display: none;
+
+        @include media(">=tablet") {
+            display: block;
+            position: absolute;
+            min-height: 100%;
+            min-width: 100%;
+            z-index: 1;
+            top: -20px;
+            right: calc(-100% + 285px);
+            background-color: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(7px);
+        }
+    }
+
+    &__title {
+        font-family: "Oswald", sans-serif;
+        font-size: 40px;
+        line-height: 50px;
+        max-width: 220px;
+        margin: 0 40px 30px 0;
+        letter-spacing: 3px;
+        position: relative;
+
+        @include media(">=tablet") {
+            font-size: 60px;
+            line-height: unset;
+            max-width: unset;
+            margin-bottom: 30px;
+            letter-spacing: 4px;
+        }
+
+        &::after {
+            content: url("../../assets/images/intro-highlight.png");
+            position: absolute;
+            transform: translate(-15px, -10px);
+
+            @include media(">=tablet") {
+                content: url("../../assets/images/intro-highlightB.png");
+                transform: translate(-26px, -11px);
+            }
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 30px;
+        max-width: 295px;
+        margin-bottom: 50px;
+
+        @include media(">=tablet") {
+            font-size: 20px;
+            line-height: 40px;
+            max-width: 450px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__transparent-button {
+        background-color: transparent;
+
+        font-family: "Lato", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        color: $white;
+        cursor: pointer;
+        min-width: 125px;
+        padding: 9px 0;
+        border: 0;
+        border-radius: 10px;
+        touch-action: none;
+        transition: all ease-in-out 0.3s;
+        z-index: 1;
+        border: 1px solid $white;
+
+        @include media(">tablet") {
+            display: none;
+        }
+    }
+
+    &__main-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 150px 0;
+        min-height: 720px;
+
+        @include media(">tablet") {
+            gap: 105px 0;
+            min-height: 800px;
+        }
+    }
+
+    &__blob-part {
+        display: none;
+
+        @include media(">=tablet") {
+            display: block;
+            padding: 0 20px 0 40px;
+        }
+    }
+}

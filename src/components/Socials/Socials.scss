@@ -1,0 +1,41 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.socials {
+    &__list {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+
+        @include media(">=tablet") {
+            gap: 20px;
+        }
+
+        &_contacts {
+            justify-content: end;
+        }
+    }
+
+    &__item {
+        display: flex;
+        padding: 8px 8px 7px 7px;
+        transition: all ease-in-out 0.3s;
+
+        @include media(">=tablet") {
+            padding: 4px;
+        }
+
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+
+    &__img {
+        display: flex;
+        max-width: 25px;
+
+        @include media(">=tablet") {
+            max-width: unset;
+        }
+    }
+}

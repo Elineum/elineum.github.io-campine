@@ -1,0 +1,25 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.blur {
+    display: none;
+
+    @include media(">=tablet") {
+        display: block;
+        position: absolute;
+        min-height: 100%;
+        min-width: 100%;
+        z-index: 1;
+        right: calc(-100% + 285px);
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(7px);
+    }
+
+    &_discount {
+        right: calc(-100% + 410px);
+    }
+
+    &_questions {
+        right: calc(-100% + 285px);
+    }
+}

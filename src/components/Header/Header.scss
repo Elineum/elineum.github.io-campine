@@ -1,0 +1,236 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.page-header {
+    position: absolute;
+    top: 32px;
+    width: 100%;
+
+    @include media(">tablet") {
+        top: 20px;
+    }
+
+    &__content-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__nav-wrap {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 71px;
+        height: 100vh;
+        width: 100vw;
+        top: calc(50% - 40px);
+        left: 0;
+        right: unset;
+        visibility: visible;
+        transform: none;
+        transition: all ease-in-out 0.3s;
+
+        @include media(">tablet") {
+            position: static;
+            flex-direction: row;
+            height: auto;
+            width: auto;
+        }
+
+        &_hidden {
+            transform: translateY(-100%);
+
+            @include media(">tablet") {
+                transform: none;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 41px;
+        list-style: none;
+
+        @include media(">tablet") {
+            flex-direction: row;
+        }
+    }
+
+    &__item {
+        position: relative;
+        transition: all ease-in-out 0.3s;
+        text-shadow: 0 0 5px transparent;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: -3px;
+            border-radius: 0 0 3px 3px;
+            transition: all ease-in-out 0.3s;
+        }
+
+        &:hover {
+            filter: drop-shadow(0 0 10px #fff);
+        }
+    }
+
+    &__link {
+        color: $white;
+        padding: 5px 0;
+        position: relative;
+        z-index: 2;
+
+        text-decoration: none;
+    }
+
+    &__burger-wrap {
+        padding: 19px 10px;
+        cursor: pointer;
+        position: relative;
+        z-index: 3;
+
+        @include media(">tablet") {
+            display: none;
+        }
+    }
+
+    &__burger {
+        position: relative;
+        height: 2px;
+        width: 20px;
+        background-color: $white;
+        border-radius: 2px;
+        transition: all ease-in-out 0.2s;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            border-radius: 2px;
+            background-color: $white;
+            transition: all ease-in-out 0.3s;
+        }
+
+        &::before {
+            top: -7px;
+            animation: burgerBeforeReverse 0.3s 1 linear alternate;
+        }
+
+        &::after {
+            bottom: -7px;
+            animation: burgerAfterReverse 0.3s 1 linear alternate;
+        }
+
+        &_active {
+            background-color: transparent;
+
+            &::before {
+                top: 0;
+                animation: burgerBefore 0.3s 1 linear alternate;
+                transform: rotate(45deg);
+            }
+
+            &::after {
+                bottom: 0;
+                animation: burgerAfter 0.3s 1 linear alternate;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+@keyframes burgerBefore {
+    0% {
+        top: -7px;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        top: 0;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        top: 0;
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes burgerAfter {
+    0% {
+        bottom: -7px;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        bottom: 0;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        bottom: 0;
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes burgerBeforeReverse {
+    0% {
+        top: 0;
+        transform: rotate(45deg);
+    }
+
+    50% {
+        top: 0;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        top: -7px;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes burgerAfterReverse {
+    0% {
+        bottom: 0;
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        bottom: 0;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        bottom: -7px;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes displayNone {
+    0% {
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+    }
+    50% {
+        opacity: 0.5;
+        visibility: visible;
+        display: flex;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
+}

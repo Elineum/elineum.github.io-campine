@@ -1,0 +1,109 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.comp-form {
+    max-width: 295px;
+
+    position: relative;
+    z-index: 2;
+
+    @include media(">=tablet") {
+        max-width: 285px;
+        margin: 0 60px 0 25px;
+    }
+
+    &_discount {
+        @include media(">=tablet") {
+            padding-top: 130px;
+        }
+    }
+
+    &_questions {
+        @include media(">=tablet") {
+            padding-top: 1px;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 45px;
+
+        &_long-space {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__label {
+        font-size: 14px;
+    }
+
+    &__input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
+        font-size: 16px;
+        border-bottom: 1px solid white;
+        padding: 15px 10px 5px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        color: white;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    &__check-wrap {
+        padding: 15px 5px 0;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    &__checkbox {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+
+        &:checked + .comp-form__checkmark {
+            visibility: visible;
+        }
+    }
+
+    &__custom-box {
+        display: inline-block;
+        position: relative;
+        min-width: 20px;
+        min-height: 20px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.1);
+        position: relative;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    &__checkmark {
+        position: absolute;
+        visibility: hidden;
+        top: 50%;
+        left: 50%;
+        height: 7.5px;
+        width: 5px;
+        border-bottom: 2px solid white;
+        border-right: 2px solid white;
+        border-bottom-right-radius: 0.15px;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &__label-link {
+        text-decoration: none;
+        padding-bottom: 1px;
+        border-bottom: 1px solid white;
+        color: inherit;
+    }
+}

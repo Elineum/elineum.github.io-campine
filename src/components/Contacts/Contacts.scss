@@ -1,0 +1,51 @@
+.contacts {
+    position: relative;
+
+    &__title {
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 60px;
+    }
+
+    &__map {
+        background-image: url("../../assets/images/contact-background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 700px;
+    }
+
+    &__info-box {
+        position: absolute;
+        right: 0;
+        padding: 40px 40px 40px 35px;
+        background-color: rgba(255, 255, 255, 0.15);
+        max-width: 275px;
+        border-radius: 0 0 30px 30px;
+        backdrop-filter: blur(7px);
+    }
+
+    &__coords {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: 7px;
+    }
+
+    &__img-wrap {
+        & img {
+            display: flex;
+        }
+    }
+}
+
+.ccc {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
